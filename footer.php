@@ -1,0 +1,19 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package WordPress
+ * @subpackage codinski
+ */
+?>
+  <hr  />
+  <hr />
+  <div class="text-center small">
+		<a href="<?php echo esc_url( __( 'https://codinski.club/', 'codinski' ) ); ?>">
+			<?php printf( __( 'Made with magic by %s', 'codinski' ), 'Liz' ); ?>
+		</a>
+	</div>
+</body>
+</html>

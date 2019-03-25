@@ -1,0 +1,21 @@
+/*
+Theme Name: codinski
+Theme URI: https://codnski.club/
+Author: Liz
+Author URI: https://codinski.club/
+Description: Simple Blog - take it or leave it
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: codinski
+Tags: plain vanilla blog theme - nothing fancy here
+This theme, like WordPress, is licensed under the GPL.
+
+body{
+  font-family: times, serif;
+}
+*/
+
+.widget-title{
+  margin: 2rem 0;
+}
