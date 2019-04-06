@@ -1,5 +1,11 @@
 <?php
 /**
+* Add featured image support
+*
+*/
+add_theme_support( 'post-thumbnails' );
+
+/**
  * Registers a widget area.
  *
  */

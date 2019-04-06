@@ -20,6 +20,13 @@ get_header(); ?>
       if ( have_posts() ) : while ( have_posts() ) : the_post();
           ?>
           <h2 class="pt-5"> <?php the_title(); ?> </h2>
+					<div>
+						<?php if ( has_post_thumbnail() ) {
+									    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),’thumbnail’ );
+									     echo '<img width="100%" src="' . $image_src[0] . '">';
+									}
+						?>
+					</div>
           <div class="bg-secondary text-light">
 						<i><small>By <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y'); ?>  in <?php the_category(', '); ?> <?php edit_post_link(__('{Edit}'), ''); ?></small></i>
 					</div>
