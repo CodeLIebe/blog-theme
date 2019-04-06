@@ -15,11 +15,11 @@
 get_header(); ?>
 
 	<div class="row m-2">
-    <div class="col-md-7 col-sm-12 p-5">
+    <div class="col-xl-8 col-md-12 px-5">
       <?php
       if ( have_posts() ) : while ( have_posts() ) : the_post();
           ?>
-          <h2> <?php the_title(); ?> </h2>
+          <h2 class="pt-5"> <?php the_title(); ?> </h2>
           <hr  />
           <i><small>By <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y'); ?>  in <?php the_category(', '); ?> <?php edit_post_link(__('{Edit}'), ''); ?></small></i>
           <?php the_content(); ?>
@@ -39,9 +39,6 @@ get_header(); ?>
       endif;
       ?>
     </div>
-
-    <div class="col p-5 border-left">
-      <?php get_sidebar(); ?>
-    </div>
+    <?php get_sidebar(); ?>
   </div>
 <?php get_footer(); ?>
