@@ -8,7 +8,7 @@
 ?>
 
 <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	<div class="col p-5 border-left bg-light">
+	<div class="col px-5  mt-5 mt-xl-0 bg-light">
 		<div>
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</div>

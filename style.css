@@ -16,6 +16,21 @@ body{
 }
 */
 
-.widget-title{
-  margin: 2rem 0;
-}
+/**
+* overwrite Bootstrap 4 classes
+*
+*/
+
+
+  a {
+    color: #cec05b!important;
+  }
+
+  a:hover {
+    color: #827727!important;
+    text-decoration: none;
+  }
+  a.lighter:hover {
+    color: #dad084!important;
+    text-decoration: none;
+  }

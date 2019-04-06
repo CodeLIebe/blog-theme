@@ -20,24 +20,27 @@ get_header(); ?>
       if ( have_posts() ) : while ( have_posts() ) : the_post();
           ?>
           <h2 class="pt-5"> <?php the_title(); ?> </h2>
-          <hr  />
-          <i><small>By <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y'); ?>  in <?php the_category(', '); ?> <?php edit_post_link(__('{Edit}'), ''); ?></small></i>
-          <?php the_content(); ?>
+          <div class="bg-secondary text-light">
+						<i><small>By <?php the_author_posts_link(); ?> on <?php the_time('F jS, Y'); ?>  in <?php the_category(', '); ?> <?php edit_post_link(__('{Edit}'), ''); ?></small></i>
+					</div>
+					<div class="bg-light">
+						<?php the_content(); ?>
+					</div>
           <?php if( $tags = get_the_tags() ) {
             foreach( $tags as $tag ) {
                 $sep = ( $tag === end( $tags ) ) ? '' : ', ';
-                echo '<a href="' . get_term_link( $tag, $tag->taxonomy ) . '">#' . $tag->name . ' </a>';
+                echo '<a href="' . get_term_link( $tag, $tag->taxonomy ) . '" class="bg-light mr-1">#' . $tag->name . ' </a>';
             }
-          }?>
-        <br />
-        <a href="<?php echo esc_url( get_permalink( get_previous_post()->ID ) ); ?>"><< prev </a>
-        |
-        <a href="<?php echo esc_url( get_permalink( get_next_post()->ID ) ); ?>">next >> </a>
-      <?php endwhile;
+          }
+				 endwhile;
       else :
           _e( 'Sorry, nothing to see here. Mind your own business, bro!', 'textdomain' );
       endif;
       ?>
+			<br />
+			<a href="<?php echo esc_url( get_permalink( get_previous_post()->ID ) ); ?>"><< prev </a>
+			|
+			<a href="<?php echo esc_url( get_permalink( get_next_post()->ID ) ); ?>">next >> </a>
     </div>
     <?php get_sidebar(); ?>
   </div>

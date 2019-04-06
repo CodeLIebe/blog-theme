@@ -17,13 +17,16 @@
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
 	<?php endif; ?>
+	<link rel="icon" href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  />
   <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_directory"); ?>/style.css" />
 	<?php wp_head(); ?>
 </head>
 <body>
-  <div class="pl-5 text-uppercase">
-    <h1><?php bloginfo( 'name' ); ?></h1>
-  </div>
-  <hr />
-  <hr />
+	<div class="container-fluid">
+		<div class="pl-5 pt-5 text-uppercase">
+	    <h1><?php bloginfo( 'name' ); ?></h1>
+	  </div>
+	  <hr />
+	  <hr />
