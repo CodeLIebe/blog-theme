@@ -8,12 +8,13 @@
  * @subpackage codinski
  */
 ?>
-  <hr  />
-  <hr />
-  <div class="text-center small">
-		<a href="<?php echo esc_url( __( 'https://codinski.club/', 'codinski' ) ); ?>">
-			<?php printf( __( 'Made with magic by %s', 'codinski' ), 'Liz' ); ?>
-		</a>
-	</div>
+    <hr  />
+    <hr />
+    <div class="text-center small">
+  		<a href="<?php echo esc_url( __( 'https://codinski.club/', 'codinski' ) ); ?>">
+  			<?php printf( __( 'Made with magic by %s', 'codinski' ), 'Liz' ); ?>
+  		</a>
+  	</div>
+  </div> <!-- close .container-fluid -->
 </body>
 </html>

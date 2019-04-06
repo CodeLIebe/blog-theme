@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div class="row m-2">
-    <div class="col-7 p-5">
+    <div class="col-md-7 col-sm-12 p-5">
       <?php
       if ( have_posts() ) : while ( have_posts() ) : the_post();
           ?>
