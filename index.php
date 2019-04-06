@@ -44,10 +44,12 @@ get_header(); ?>
           _e( 'Sorry, nothing to see here. Mind your own business, bro!', 'textdomain' );
       endif;
       ?>
+			<!--
 			<br />
 			<a href="<?php echo esc_url( get_permalink( get_previous_post()->ID ) ); ?>"><< prev </a>
 			|
 			<a href="<?php echo esc_url( get_permalink( get_next_post()->ID ) ); ?>">next >> </a>
+			-->
     </div>
     <?php get_sidebar(); ?>
   </div>
