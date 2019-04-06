@@ -26,7 +26,7 @@
 <body>
 	<div class="container-fluid">
 		<div class="pl-5 pt-5 text-uppercase">
-	    <h1><?php bloginfo( 'name' ); ?></h1>
+	    <h1><a href="<?php echo esc_url( get_site_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 	  </div>
 	  <hr />
 	  <hr />
